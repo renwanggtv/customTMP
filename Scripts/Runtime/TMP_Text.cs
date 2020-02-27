@@ -7299,8 +7299,6 @@ namespace TMPro
 
                                 //    break;
                                 default:
-                                    if (nameHashCode != 2246877 && nameHashCode != 1619421)
-                                        return false;
                                     break;
                             }
                         }
