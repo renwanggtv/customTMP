@@ -26,11 +26,6 @@ namespace TMPro
         void Awake()
         {
             m_TextComponent = GetComponent<TMP_Text>();
-            string anim = "ANIM";
-            UnityEngine.Debug.Log(GetHashCode(anim));
-            string custom = "FRAME";
-            UnityEngine.Debug.Log(GetHashCode(custom));
-
         }
 
         public char ToUpperASCIIFast(char c)
@@ -114,7 +109,7 @@ namespace TMPro
 
                 if (customFrameRate != null && customFrameRate.Length > currentFrame)
                 {
-                    targetTime = 1f / Mathf.Abs(framerate) * customFrameRate[currentFrame];
+                    targetTime = 1f / Mathf.Abs(framerate) * customFrameRate[currentFrame - start];
 
                 }
                 else
